@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		3B4E7481D6B41462E54BFC7A /* Pods-SJHome_Module_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJHome_Module_Example.debug.xcconfig"; path = "Target Support Files/Pods-SJHome_Module_Example/Pods-SJHome_Module_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3F1C02F4B4605F0D8BEB2710 /* Pods_SJHome_Module_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJHome_Module_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		53F7F6C6394D3AE6FD80FEB3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		53F7F6C6394D3AE6FD80FEB3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SJHome_Module_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SJHome_Module_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,12 +60,12 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		628650702AE547288D4B0192 /* Pods-SJHome_Module_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJHome_Module_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SJHome_Module_Tests/Pods-SJHome_Module_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		635B4521F21415633CD01F0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		635B4521F21415633CD01F0B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6B687163BBA83C33E55D9513 /* Pods-SJHome_Module_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJHome_Module_Tests.release.xcconfig"; path = "Target Support Files/Pods-SJHome_Module_Tests/Pods-SJHome_Module_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CF764FA03DD35515C195CFAA /* Pods-SJHome_Module_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJHome_Module_Example.release.xcconfig"; path = "Target Support Files/Pods-SJHome_Module_Example/Pods-SJHome_Module_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D9D0E0AF8E62FB1530F6ED33 /* SJHome_Module.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SJHome_Module.podspec; path = ../SJHome_Module.podspec; sourceTree = "<group>"; };
+		D9D0E0AF8E62FB1530F6ED33 /* SJHome_Module.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SJHome_Module.podspec; path = ../SJHome_Module.podspec; sourceTree = "<group>"; };
 		EC285617D34E0D120A6F20E4 /* Pods_SJHome_Module_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJHome_Module_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				628650702AE547288D4B0192 /* Pods-SJHome_Module_Tests.debug.xcconfig */,
 				6B687163BBA83C33E55D9513 /* Pods-SJHome_Module_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -501,6 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -517,6 +518,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
