@@ -1,0 +1,16 @@
+PODS:
+  - SJHome_Module (0.1.0)
+
+DEPENDENCIES:
+  - SJHome_Module (from `../`)
+
+EXTERNAL SOURCES:
+  SJHome_Module:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SJHome_Module: e85d876a6b9ea2031358a2b6f9263bb8bf8d3409
+
+PODFILE CHECKSUM: c170f1fe33be7e239f137eaf06c71dbf7195ef59
+
+COCOAPODS: 1.11.3
