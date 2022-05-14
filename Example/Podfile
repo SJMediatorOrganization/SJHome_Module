@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'SJHome_Module_Example' do
+  pod 'SJHome_Module', :path => '../'
+
+  target 'SJHome_Module_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
